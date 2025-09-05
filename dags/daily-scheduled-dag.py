@@ -68,7 +68,7 @@ def scheduled_daily_dag():
         print(f"Daily revenue: ${transaction_data['daily_revenue']}")
         return transaction_data
     
-    @task(queue='priority')
+    @task(queue='"priority"')
     def extract_external_data():
         """
         Parallel extraction task 3: Extract external API data
