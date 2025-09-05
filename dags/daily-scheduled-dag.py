@@ -83,6 +83,7 @@ def scheduled_daily_dag():
             "weather_impact": 0.95,
             "competitor_analysis": "stable"
         }
+        queue='priority'
         print(f"Extracted external data: {list(external_data.keys())}")
         return external_data
     
