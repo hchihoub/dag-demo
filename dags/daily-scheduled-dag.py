@@ -4,7 +4,7 @@ from datetime import timedelta
 from airflow.decorators import dag, task
 
 @dag(
-    schedule="0 6 * * *",  # Run daily at 6:00 AM UTC
+    schedule="0 7 * * *",  # Run daily at 6:00 AM UTC
     start_date=pendulum.datetime(2025, 9, 1, tz="UTC"),
     catchup=False,
     tags=["example", "scheduled"],
